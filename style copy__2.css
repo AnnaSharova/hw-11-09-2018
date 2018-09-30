@@ -1,54 +1,61 @@
+@font-face {
+font-family: Nunito;
+src: url(fonts/Nunito-Regular.ttf);
+}
+
+body {
+background-color: #266b97;
+}	
 
 .sky {
-height: 468px; 
-background-color: #b9d6ef;
 position: relative;
-}	
-	.backgr_top {
+text-align: center;
+height: 468px;
+width: 100vw;
+background-color: #b9d6ef;
+}
+	.cloud {
 	position: relative;
-	text-align: center;
-	width: 980px;
-	height: 468px;
-	background-color: #b9d6ef;
-	left: 15%;
+	z-index: 5;
 	}
-		.cloud {
-		position: relative;
-		text-align: center;
-		z-index: 5;
-		}
+	.text {
+	position: relative;
+	}
 		.title {
   		font-size: 72px;
-  		font-family: Arial;
+  		font-family: Nunito;
   		color: rgb(254, 254, 254);
   		font-weight: bold;
   		line-height: 0.222;
- 		text-align: center;
   		text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.17);
-  		position: absolute;
-  		left: 220px;
+  		position: relative;
   		z-index: 10;
+  		text-align: center;
 		}
 		.subtitle {
   		font-size: 14px;
-  		font-family: Arial;
+  		font-family: Nunito;
   		color: rgb(38, 107, 151);
   		line-height: 1.143;
-  		text-align: left;
-  		position: absolute;
-  		left: 323px;
-  		top: 173px;
+  		text-align: center;
+  		position: relative;
+  		top: -30px;
   		z-index: 10;
 		}
-		.background {
+		FORM {
+		position: absolute;
+		top: 90px;
+		width: 100%;
+		}
+		.input {
   		border-radius: 5px;
-  		font-family: Arial;
+  		font-family: Nunito;
   		text-align: left;
   		background-image: linear-gradient( 90deg, rgb(240,240,240) 0%, rgb(235,235,235) 100%);
   		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.004),inset 0px 2px 5px 0px rgba(29, 26, 22, 0.2);
-  		position: absolute;
-  		left: 300px;
-  		top: 217px;
+  		position: relative;
+  		top: 0px;
+  		left: 300 px;
  		width: 240px;
   		height: 33px;
   		z-index: 10;
@@ -56,7 +63,7 @@ position: relative;
 		}
 		.buttton_sub {
 		font-size: 14px;
-  		font-family: Arial;
+  		font-family: Nunito;
   		color: rgb(255, 255, 255);
   		line-height: 1.786;
   		text-align: center;
@@ -64,70 +71,143 @@ position: relative;
   		font-weight: bold;
   		border-radius: 5px;
   		background-image: -webkit-linear-gradient( 90deg, rgb(250,185,55) 20%, rgb(255,255,255) 100%);
-  		position: absolute;
-  		left: 557px;
-  		top: 216px;
+  		position: relative;
+  		left: 10px;
+  		top: 0px;
   		height: 43px;
   		z-index: 10;
 		}
+
+.horizon_sky {
+position: relative;
+background-color: #ddecfa;
+height: 4px;
+width: 100vw;
+}
+
+.horizon_sea {
+position: relative;
+background-color: #327dad;
+height: 9px;
+width: 100vw;
+}
+
+.sea {
+position: relative;
+text-align: center;
+height: 323px;
+width: 100vw;
+background-color: #266b97;
+}
+		
 		.ship {
 		position: relative;
 		z-index: 20;
-		right: 170px;
-		top: 377px;
+		top: -25px;
+		left: -170px;
 		}
-
-.string_t {
-height: 6px; 
-background-color: green;
-position: relative;
-}
-	.string2 {
-	position: relative;
-	background-color: #ddecfa;
-	height: 6px;
-	width: 100%;
-	}
-
-.string_b {
-height: 9px; 
-background-color: red;
-position: relative;
-}
-	.string1 {
-	position: relative;
-	background-color: #327dad;
-	height: 9px;
-	width: 100%;
-	}
-
-.see {
-height: 323px; 
-background-color: #266b97;
-position: relative;
-}
-	.backgr_bottom {
-	position: relative;
-	text-align: center;
-	width: 980px;
-	height: 323px;
-	background-color: #266b97;
-	left: 15%;
-	}
-		.ice {
+		.iceberg {
 		position: relative;
+		margin-top: -223px;
+		height: 490px;
+		width: 100vw;
 		text-align: center;
-		z-index: 15;
-		margin: -200px;
+		overflow: hidden;
 		}
-		
-
-
-
-
-		
-		
-		
+			.ice {
+			position: relative;
+			z-index: 15;
+			}
+			.ellipse1 {
+			position: absolute;
+			text-align: center;
+			left: -110px;
+			z-index: 25;
+			top: 250px;
+			width: 100vw;
+			}
+				.ellipse1::before {
+				content: "113";
+				font-size: 24px;
+  				font-family: Nunito;
+				position: absolute;
+				z-index: 30;
+				font-size: 24px;
+				color: rgb(38, 107, 151);
+				margin-top: 23px;
+				margin-left: 14px;
+				}
+				.ellipse1::after {
+				content: "DAYS";
+				font-size: 24px;
+  				font-family: Nunito;
+				position: absolute;
+				z-index: 30;
+				font-size: 24px;
+				color: rgb(243, 243, 243);
+				margin-top: 80px;
+				margin-left: -66px;
+				}
+			.ellipse2 {
+			position: absolute;
+			text-align: center;
+			left: 0px;
+			z-index: 25;
+			top: 250px;
+			width: 100vw;
+			}
+				.ellipse2::before {
+				content: "09";
+				font-size: 24px;
+  				font-family: Nunito;
+				position: absolute;
+				z-index: 30;
+				font-size: 24px;
+				color: rgb(38, 107, 151);
+				margin-top: 23px;
+				margin-left: 21px;
+				}
+				.ellipse2::after {
+				content: "HOURS";
+				font-size: 24px;
+  				font-family: Nunito;
+				position: absolute;
+				z-index: 30;
+				font-size: 24px;
+				color: rgb(243, 243, 243);
+				margin-top: 80px;
+				margin-left: -76px;
+				}
+			.ellipse3 {
+			position: absolute;
+			text-align: center;
+			right: -110px;
+			z-index: 25;
+			top: 250px;
+			width: 100vw;
+			}
+				.ellipse3::before {
+				content: "59";
+				font-size: 24px;
+  				font-family: Nunito;
+				position: absolute;
+				z-index: 30;
+				font-size: 24px;
+				color: rgb(38, 107, 151);
+				margin-top: 23px;
+				margin-left: 21px;
+				}
+				.ellipse3::after {
+				content: "MINS";
+				font-size: 24px;
+  				font-family: Nunito;
+				position: absolute;
+				z-index: 30;
+				font-size: 24px;
+				color: rgb(243, 243, 243);
+				margin-top: 80px;
+				margin-left: -68px;
+				}
 		
 		
 		
